@@ -1,0 +1,380 @@
+:root {
+  color-scheme: light;
+  --ink: #14201d;
+  --muted: #5d6b66;
+  --paper: #f8f8f4;
+  --surface: #ffffff;
+  --line: #d7ddd6;
+  --forest: #164b3f;
+  --teal: #167c74;
+  --gold: #b1842b;
+  --clay: #bf6b4a;
+  --shadow: 0 24px 70px rgba(20, 32, 29, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  align-items: center;
+  background: rgba(248, 248, 244, 0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  min-height: 72px;
+  padding: 0 5vw;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  align-items: center;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 750;
+  gap: 0.7rem;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--forest);
+  border-radius: 6px;
+  color: #fff;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+nav {
+  display: flex;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+nav a {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+nav a:hover {
+  color: var(--forest);
+}
+
+.hero {
+  display: grid;
+  gap: clamp(2rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  min-height: calc(100vh - 72px);
+  padding: clamp(5rem, 10vw, 8rem) 5vw clamp(4rem, 7vw, 6rem);
+  position: relative;
+}
+
+.hero::before {
+  background:
+    linear-gradient(115deg, rgba(22, 75, 63, 0.13), transparent 46%),
+    radial-gradient(circle at 72% 28%, rgba(191, 107, 74, 0.12), transparent 30%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.hero-copy,
+.signal-panel {
+  position: relative;
+}
+
+.hero-copy {
+  align-self: center;
+  max-width: 820px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(3.1rem, 7vw, 6.3rem);
+  letter-spacing: 0;
+  line-height: 0.98;
+  margin-bottom: 1.5rem;
+  max-width: 980px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.75rem);
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.28rem;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  max-width: 780px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.button {
+  align-items: center;
+  border-radius: 7px;
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.8rem 1.05rem;
+}
+
+.button.primary {
+  background: var(--forest);
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: #0e3b31;
+}
+
+.button.secondary {
+  border: 1px solid var(--line);
+  color: var(--forest);
+}
+
+.button.secondary:hover {
+  border-color: var(--forest);
+}
+
+.signal-panel {
+  align-self: end;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.signal-row {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 44px 1fr;
+  min-height: 92px;
+  padding: 1.15rem;
+}
+
+.signal-row:last-child {
+  border-bottom: 0;
+}
+
+.signal-row span,
+.service-number {
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.section {
+  padding: clamp(4rem, 8vw, 7rem) 5vw;
+}
+
+.section-heading {
+  max-width: 880px;
+}
+
+.problem {
+  background: var(--forest);
+  color: #fff;
+}
+
+.problem .eyebrow {
+  color: #e4bd63;
+}
+
+.problem p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.25rem;
+  max-width: 900px;
+}
+
+.service-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 280px;
+  padding: 1.6rem;
+}
+
+.service-card p,
+.about-copy p {
+  color: var(--muted);
+}
+
+.split {
+  background: #eef2ed;
+  display: grid;
+  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+}
+
+.about-copy {
+  align-self: center;
+}
+
+.capability-list {
+  display: grid;
+  gap: 0.8rem;
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.capability-list li {
+  border-left: 4px solid var(--teal);
+  color: var(--ink);
+  font-weight: 700;
+  padding-left: 0.85rem;
+}
+
+.audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.audience-list span {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--forest);
+  font-weight: 750;
+  padding: 0.7rem 0.9rem;
+}
+
+.cta {
+  background: var(--ink);
+  color: #fff;
+  padding: clamp(4rem, 8vw, 7rem) 5vw;
+}
+
+.cta .eyebrow {
+  color: #e4bd63;
+}
+
+.cta h2 {
+  max-width: 950px;
+}
+
+.site-footer {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1.5rem 5vw;
+}
+
+.site-footer a {
+  color: var(--forest);
+  font-weight: 750;
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .hero,
+  .split,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 4rem;
+  }
+
+  .signal-panel {
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 520px) {
+  nav {
+    gap: 0.85rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
