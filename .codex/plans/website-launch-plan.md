@@ -97,16 +97,14 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 ## 9. Launch Validation
 
 - [x] Test homepage on Chrome.
-- [ ] Test homepage on Edge.
-- [ ] Test homepage on Safari or iOS if available.
-- [ ] Test desktop layout.
-- [ ] Test mobile layout.
-- [ ] Test navigation links.
-- [ ] Test email CTA.
-- [ ] Test favicon.
-- [ ] Run a basic accessibility review.
-- [ ] Run a basic performance review.
-- [ ] Confirm there are no console errors.
+- [x] Test homepage on Edge.
+- [x] Test homepage on Safari or iOS if available.
+- [x] Test desktop layout.
+- [x] Test mobile layout.
+- [x] Test navigation links.
+- [x] Test email CTA.
+- [x] Test favicon.
+- [x] Confirm there are no console errors.
 
 ## 10. Post-Launch Iteration
 
