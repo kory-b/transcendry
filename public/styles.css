@@ -275,6 +275,34 @@ h3 {
   align-self: center;
 }
 
+.founder-card {
+  align-self: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.founder-card img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 28%;
+  width: 100%;
+}
+
+.founder-card .about-copy {
+  padding: 1.6rem;
+}
+
+.founder-name {
+  color: var(--forest);
+  font-weight: 850;
+  margin-bottom: 0.45rem;
+}
+
 .capability-list {
   display: grid;
   gap: 0.8rem;

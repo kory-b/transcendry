@@ -9,9 +9,9 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 - [x] Define initial positioning: practical transformation through data, AI, and digital execution.
 - [x] Identify core audience: operations, analytics, supply chain, reporting, digital, and mid-market business leaders.
 - [x] Capture initial service categories from the business planning brief.
-- [ ] Refine the one-line positioning statement after seeing the live site.
-- [ ] Decide whether to use founder name/photo on the first public version.
-- [ ] Decide whether the footer should say `Transcendry`, `Transcendry LLC`, or another legal/public variant once the Ohio LLC filing is confirmed.
+- [x] Refine the one-line positioning statement after seeing the live site.
+- [x] Decide whether to use founder name/photo on the first public version.
+- [x] Decide whether the footer should say `Transcendry`, `Transcendry LLC`, or another legal/public variant once the Ohio LLC filing is confirmed.
 
 ## 2. Initial Website Build
 
@@ -22,10 +22,10 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 - [x] Add `robots.txt`.
 - [x] Add `sitemap.xml`.
 - [x] Verify the static site serves locally.
-- [ ] Review the homepage visually on desktop.
-- [ ] Review the homepage visually on mobile.
-- [ ] Proofread all public-facing copy.
-- [ ] Replace or revise any copy that feels too generic, too hype-driven, or too technical.
+- [x] Review the homepage visually on desktop.
+- [x] Review the homepage visually on mobile.
+- [x] Proofread all public-facing copy.
+- [x] Replace or revise any copy that feels too generic, too hype-driven, or too technical.
 
 ## 3. Cloudflare Pages Setup
 
@@ -34,11 +34,11 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
   - Build command: `exit 0`
   - Build output directory: `public`
   - Root directory: blank
-- [ ] Connect Cloudflare Pages to the GitHub repository.
-- [ ] Confirm the first Pages deployment succeeds.
-- [ ] Add `transcendry.com` as a custom domain.
-- [ ] Add `www.transcendry.com` as a custom domain.
-- [ ] Confirm HTTPS is active for both domains.
+- [x] Connect Cloudflare Pages to the GitHub repository.
+- [x] Confirm the first Pages deployment succeeds.
+- [x] Add `transcendry.com` as a custom domain.
+- [x] Add `www.transcendry.com` as a custom domain.
+- [x] Confirm HTTPS is active for both domains.
 - [ ] Choose canonical domain, recommended: `https://transcendry.com`.
 - [ ] Redirect `www.transcendry.com` to `transcendry.com`.
 - [ ] Confirm the public site loads from the custom domain.
@@ -88,7 +88,7 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 
 - [ ] Decide whether to create a full logo or keep the current simple mark.
 - [ ] Decide on final brand colors and typography direction.
-- [ ] Add stronger founder credibility signals.
+- [x] Add stronger founder credibility signals.
 - [ ] Add one concise case-style example, even if anonymized or hypothetical.
 - [ ] Add a first insight/article if thought leadership becomes useful.
 - [ ] Create a LinkedIn company page.
@@ -117,4 +117,3 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 - [ ] Add pricing ranges only if it helps qualify leads.
 - [ ] Create a simple lead tracker or CRM.
 - [ ] Revisit the site after the first real prospect conversation.
-
