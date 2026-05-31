@@ -281,20 +281,26 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 132px minmax(0, 1fr);
   overflow: hidden;
+  padding: 1.35rem;
 }
 
 .founder-card img {
-  aspect-ratio: 4 / 3;
+  align-self: start;
+  aspect-ratio: 1;
+  border-radius: 50%;
   display: block;
-  height: auto;
+  height: 132px;
   object-fit: cover;
-  object-position: 50% 28%;
-  width: 100%;
+  object-position: 50% 26%;
+  width: 132px;
 }
 
 .founder-card .about-copy {
-  padding: 1.6rem;
+  padding: 0;
 }
 
 .founder-name {
@@ -387,6 +393,10 @@ h3 {
   .signal-panel {
     align-self: stretch;
   }
+
+  .founder-card {
+    max-width: 620px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -404,5 +414,15 @@ h3 {
 
   .button {
     width: 100%;
+  }
+
+  .founder-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+    padding: 1rem;
+  }
+
+  .founder-card img {
+    height: 96px;
+    width: 96px;
   }
 }

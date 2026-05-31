@@ -39,25 +39,25 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 - [x] Add `transcendry.com` as a custom domain.
 - [x] Add `www.transcendry.com` as a custom domain.
 - [x] Confirm HTTPS is active for both domains.
-- [ ] Choose canonical domain, recommended: `https://transcendry.com`.
-- [ ] Redirect `www.transcendry.com` to `transcendry.com`.
-- [ ] Confirm the public site loads from the custom domain.
-- [ ] Confirm `https://transcendry.com/sitemap.xml` loads.
-- [ ] Confirm `https://transcendry.com/robots.txt` loads.
+- [x] Choose canonical domain, recommended: `https://transcendry.com`.
+- [x] Redirect `www.transcendry.com` to `transcendry.com`.
+- [x] Confirm the public site loads from the custom domain.
+- [x] Confirm `https://transcendry.com/sitemap.xml` loads.
+- [x] Confirm `https://transcendry.com/robots.txt` loads.
 
 ## 4. GitHub And Deployment Flow
 
 - [x] Create GitHub repository: `kory-b/transcendry`.
 - [x] Connect local repository to GitHub remote.
-- [ ] Push the current site files to GitHub.
-- [ ] Confirm Cloudflare deploys automatically after a push.
-- [ ] Decide whether to use branches or direct commits to the main branch for early site updates.
-- [ ] Add a short `README.md` explaining the repo purpose and deployment settings.
+- [x] Push the current site files to GitHub.
+- [x] Confirm Cloudflare deploys automatically after a push.
+- [x] Decide whether to use branches or direct commits to the main branch for early site updates.
+- [x] Add a short `README.md` explaining the repo purpose and deployment settings.
 
 ## 5. Contact And Lead Capture
 
-- [ ] Set up business email or forwarding for `hello@transcendry.com`.
-- [ ] Test `mailto:hello@transcendry.com` from the live site.
+- [x] Set up business email or forwarding for `hello@transcendry.com`.
+- [x] Test `mailto:hello@transcendry.com` from the live site.
 - [ ] Decide whether to keep a simple email CTA or add a contact form.
 - [ ] If adding a form, choose a form handler or Cloudflare Pages Function.
 - [ ] If adding a form, add bot protection such as Cloudflare Turnstile.
@@ -69,7 +69,7 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 - [ ] Confirm Ohio LLC filing approval.
 - [ ] Confirm exact public/legal name usage.
 - [ ] Review employer conflict-of-interest and outside-work policies before taking paid work.
-- [ ] Avoid use of employer code, data, templates, decks, prompts, architecture, or confidential information.
+- [x] Avoid use of employer code, data, templates, decks, prompts, architecture, or confidential information.
 - [ ] Decide whether to add a privacy policy before collecting form submissions or analytics data.
 - [ ] Decide whether to add a terms/disclaimer page.
 - [ ] Evaluate professional liability or E&O insurance before client work begins.
@@ -96,7 +96,7 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 
 ## 9. Launch Validation
 
-- [ ] Test homepage on Chrome.
+- [x] Test homepage on Chrome.
 - [ ] Test homepage on Edge.
 - [ ] Test homepage on Safari or iOS if available.
 - [ ] Test desktop layout.
