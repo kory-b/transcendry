@@ -7,16 +7,26 @@ The site is intentionally simple: plain HTML/CSS in `public/`, deployed through 
 ## Repository Structure
 
 ```text
+AGENTS.md
+.codex/
+  context/
+    project.md
+    business-summary.md
+  plans/
+    active.md
+    website-launch-plan.md
+  runbooks/
+  decisions/
+  checklists/
 public/
   index.html
   styles.css
   favicon.svg
   robots.txt
   sitemap.xml
-
-transcendry_business_summary.md
-website_launch_plan.md
 ```
+
+`public/` contains the production website. `.codex/` contains the agentic harness: project context, plans, runbooks, decisions, and review checklists for coding agents.
 
 ## Launch Locally
 
@@ -68,4 +78,4 @@ Environment variables: none
 
 ## Launch Tracker
 
-Use `website_launch_plan.md` to track setup and launch work.
+Use `.codex/plans/website-launch-plan.md` to track setup and launch work. Use `.codex/plans/active.md` for the current agent-facing work queue.
