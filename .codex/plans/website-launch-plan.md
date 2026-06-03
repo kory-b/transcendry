@@ -86,7 +86,7 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 
 ## 8. Brand And Content Polish
 
-- [ ] Decide whether to create a full logo or keep the current simple mark.
+- [x] Decide whether to create a full logo or keep the current simple mark: replaced placeholder mark with a refined SVG logo mark.
 - [ ] Decide on final brand colors and typography direction.
 - [x] Add stronger founder credibility signals.
 - [ ] Add one concise case-style example, even if anonymized or hypothetical.

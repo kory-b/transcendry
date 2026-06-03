@@ -4,12 +4,14 @@
   --muted: #5d6b66;
   --paper: #f8f8f4;
   --surface: #ffffff;
+  --surface-soft: #f0f4ef;
   --line: #d7ddd6;
   --forest: #164b3f;
   --teal: #167c74;
   --gold: #b1842b;
   --clay: #bf6b4a;
   --shadow: 0 24px 70px rgba(20, 32, 29, 0.12);
+  --shadow-soft: 0 16px 40px rgba(20, 32, 29, 0.08);
 }
 
 * {
@@ -54,22 +56,41 @@ a {
   display: inline-flex;
   font-size: 1rem;
   font-weight: 750;
-  gap: 0.7rem;
+  gap: 0.78rem;
+}
+
+.brand-lockup {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.brand-name {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .brand-mark {
-  align-items: center;
-  background: var(--forest);
-  border-radius: 6px;
-  color: #fff;
-  display: inline-flex;
-  height: 34px;
-  justify-content: center;
-  width: 34px;
+  display: block;
+  filter: drop-shadow(0 10px 18px rgba(22, 75, 63, 0.2));
+  flex: 0 0 auto;
+  height: 42px;
+  width: 42px;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: clamp(1rem, 3vw, 2rem);
 }
 
@@ -94,8 +115,9 @@ nav a:hover {
 
 .hero::before {
   background:
-    linear-gradient(115deg, rgba(22, 75, 63, 0.13), transparent 46%),
-    radial-gradient(circle at 72% 28%, rgba(191, 107, 74, 0.12), transparent 30%);
+    linear-gradient(115deg, rgba(22, 75, 63, 0.15), transparent 44%),
+    radial-gradient(circle at 72% 28%, rgba(191, 107, 74, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 65%);
   content: "";
   inset: 0;
   pointer-events: none;
@@ -129,11 +151,11 @@ p {
 }
 
 h1 {
-  font-size: clamp(3.1rem, 7vw, 6.3rem);
+  font-size: clamp(2.9rem, 6vw, 5.4rem);
   letter-spacing: 0;
-  line-height: 0.98;
+  line-height: 1;
   margin-bottom: 1.5rem;
-  max-width: 980px;
+  max-width: 860px;
 }
 
 h2 {
@@ -154,6 +176,25 @@ h3 {
   color: var(--muted);
   font-size: clamp(1.15rem, 2vw, 1.35rem);
   max-width: 780px;
+}
+
+.hero-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.hero-notes span {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(22, 75, 63, 0.14);
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 0.55rem 0.9rem;
 }
 
 .hero-actions {
@@ -193,25 +234,45 @@ h3 {
 
 .signal-panel {
   align-self: end;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(20, 32, 29, 0.08);
   border-radius: 8px;
   box-shadow: var(--shadow);
   overflow: hidden;
+  padding-top: 0.75rem;
+}
+
+.panel-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 1.15rem 0.85rem;
+  text-transform: uppercase;
 }
 
 .signal-row {
-  align-items: center;
+  align-items: start;
   border-bottom: 1px solid var(--line);
   display: grid;
   gap: 1rem;
   grid-template-columns: 44px 1fr;
-  min-height: 92px;
+  min-height: 108px;
   padding: 1.15rem;
 }
 
 .signal-row:last-child {
   border-bottom: 0;
+}
+
+.signal-row strong {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.signal-row p {
+  color: var(--muted);
+  margin-bottom: 0;
 }
 
 .signal-row span,
@@ -246,22 +307,72 @@ h3 {
 
 .service-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 2rem;
 }
 
 .service-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 244, 239, 0.7));
+  border: 1px solid rgba(20, 32, 29, 0.08);
   border-radius: 8px;
-  min-height: 280px;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
   padding: 1.6rem;
 }
 
 .service-card p,
 .about-copy p {
   color: var(--muted);
+}
+
+.service-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.service-meta span {
+  border-top: 1px solid rgba(22, 75, 63, 0.12);
+  color: var(--forest);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding-top: 0.8rem;
+  width: 100%;
+}
+
+.method {
+  background:
+    linear-gradient(180deg, rgba(238, 242, 237, 0.6), rgba(255, 255, 255, 0));
+}
+
+.method-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.method-step {
+  background: var(--surface);
+  border: 1px solid rgba(20, 32, 29, 0.08);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  min-height: 240px;
+  padding: 1.5rem;
+}
+
+.method-step span {
+  color: var(--clay);
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 850;
+  margin-bottom: 1rem;
 }
 
 .split {
@@ -277,8 +388,9 @@ h3 {
 
 .founder-card {
   align-self: center;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 248, 244, 0.92));
+  border: 1px solid rgba(20, 32, 29, 0.08);
   border-radius: 8px;
   box-shadow: var(--shadow);
   display: grid;
@@ -306,7 +418,18 @@ h3 {
 .founder-name {
   color: var(--forest);
   font-weight: 850;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.3rem;
+}
+
+.founder-role {
+  color: var(--clay);
+  font-size: 0.92rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.about-copy .founder-role {
+  color: var(--clay);
 }
 
 .capability-list {
@@ -381,7 +504,8 @@ h3 {
 
   .hero,
   .split,
-  .service-grid {
+  .service-grid,
+  .method-grid {
     grid-template-columns: 1fr;
   }
 
@@ -400,8 +524,18 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .site-header {
+    align-items: stretch;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
   nav {
+    justify-content: space-between;
     gap: 0.85rem;
+    width: 100%;
   }
 
   nav a {
@@ -409,7 +543,7 @@ h3 {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   .button {
@@ -417,12 +551,17 @@ h3 {
   }
 
   .founder-card {
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     padding: 1rem;
   }
 
   .founder-card img {
-    height: 96px;
-    width: 96px;
+    height: 112px;
+    justify-self: start;
+    width: 112px;
+  }
+
+  .capability-list {
+    margin-top: 1rem;
   }
 }
