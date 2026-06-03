@@ -66,8 +66,8 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 
 ## 6. Business And Legal Basics
 
-- [ ] Confirm Ohio LLC filing approval.
-- [ ] Confirm exact public/legal name usage.
+- [x] Confirm Ohio LLC filing approval: approved June 2, 2026, effective June 1, 2026.
+- [x] Confirm exact public/legal name usage: public brand `Transcendry`, legal name `Transcendry LLC`.
 - [ ] Review employer conflict-of-interest and outside-work policies before taking paid work.
 - [x] Avoid use of employer code, data, templates, decks, prompts, architecture, or confidential information.
 - [ ] Decide whether to add a privacy policy before collecting form submissions or analytics data.

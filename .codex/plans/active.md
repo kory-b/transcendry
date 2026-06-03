@@ -10,6 +10,7 @@ Prepare the Transcendry static website for a clean first launch while keeping th
 - Local launch scripts exist at the repo root.
 - Cloudflare Pages settings are documented in `README.md`.
 - Business and launch planning context now lives in `.codex/`.
+- Ohio LLC approval is confirmed; public brand is `Transcendry` and legal name is `Transcendry LLC`.
 
 ## Next Work Queue
 
@@ -19,7 +20,6 @@ Prepare the Transcendry static website for a clean first launch while keeping th
 - Replace or revise any copy that feels generic, hype-driven, or too technical.
 - Add Open Graph/social preview metadata.
 - Decide whether to add a social preview image.
-- Confirm final footer naming once legal/public name usage is decided.
 
 ## Deferred Until Explicit Decision
 
