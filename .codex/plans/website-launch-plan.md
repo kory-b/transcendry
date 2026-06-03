@@ -77,9 +77,9 @@ Use this as the shared launch tracker for `transcendry.com`. Check items off man
 ## 7. Analytics And Search Basics
 
 - [ ] Add basic privacy-respecting analytics, such as Cloudflare Web Analytics, Plausible, or Fathom.
-- [ ] Confirm page titles and meta descriptions are set.
-- [ ] Add Open Graph/social preview metadata.
-- [ ] Add a social preview image.
+- [x] Confirm page titles and meta descriptions are set.
+- [x] Add Open Graph/social preview metadata.
+- [x] Add a social preview image.
 - [ ] Submit sitemap to Google Search Console after the site is live.
 - [ ] Submit sitemap to Bing Webmaster Tools if useful.
 - [ ] Search for `site:transcendry.com` after indexing begins.

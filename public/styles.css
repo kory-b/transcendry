@@ -295,7 +295,7 @@ h3 {
   display: block;
   height: 132px;
   object-fit: cover;
-  object-position: 50% 26%;
+  object-position: center;
   width: 132px;
 }
 

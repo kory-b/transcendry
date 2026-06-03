@@ -18,8 +18,6 @@ Prepare the Transcendry static website for a clean first launch while keeping th
 - Review homepage visually on mobile.
 - Proofread all public-facing copy.
 - Replace or revise any copy that feels generic, hype-driven, or too technical.
-- Add Open Graph/social preview metadata.
-- Decide whether to add a social preview image.
 
 ## Deferred Until Explicit Decision
 
